@@ -3,6 +3,6 @@ import { render } from 'react-dom';
 
 import './index.scss';
 
-const App = () => <div>Hello World!</div>;
+const App = () => <>Hello World!</>;
 
 render(<App />, document.getElementById('root'));
