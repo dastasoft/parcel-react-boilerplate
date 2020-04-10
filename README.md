@@ -52,14 +52,14 @@ First of all, let's install and configure the bundler:
 
 ```bash
 yarn add react react-dom
-yarn add -D parcel-bundler babel-preset-env babel-preset-react
+yarn add -D parcel-bundler @babel/core @babel/preset-env @babel/preset-react
 ```
 
 On your project root folder create a `.babelrc` file and add the following content:
 
 ```json
 {
-  "presets": ["env", "react"]
+  "presets": ["@babel/preset-react"]
 }
 ```
 
@@ -106,7 +106,7 @@ For the `index.js` lets place some basic React code:
 import React from 'react';
 import { render } from 'react-dom';
 
-const App = () => <div>Hello Wolrd!</div>;
+const App = () => <>Hello Wolrd!</>;
 
 render(<App />, document.getElementById('root'));
 ```
