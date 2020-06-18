@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": "dastasoft",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
