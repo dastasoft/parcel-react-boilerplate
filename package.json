@@ -6,7 +6,8 @@
   "author": "dastasoft",
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "build": "parcel build public/index.html",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -28,8 +29,18 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
+    "husky": ">=4",
+    "lint-staged": ">=10",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2",
     "sass": "^1.27.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
