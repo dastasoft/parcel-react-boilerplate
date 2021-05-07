@@ -1,8 +1,4 @@
-*
-!*/
-!*.js
-!*.ts
-!*.json
 .cache
-node_modules
-dist
+**/dist/*
+**/build/*
+**/node_modules/*
